@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>home</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>	
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="picture.html">Pictures</a></li>
+					<li><a href="map.html">Map</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="about.html">Resident Info</a></li>
+				</ul>
+			</nav>
+			<header>
+			<h1>Package Notification</h1>
+		</header>
+		<div class="container">
+			<h3>Mail Box Numbers</h3>
+			<table class="boxNum" onclick="boxNum()"> 
+				<tr> 
+					<th>Section A</th>
+				</tr> 
+				<tr> 
+					<td><input type="radio" name="box" id="A100" onclick="boxNum(this)"> A100</td> 
+					<td><input type="radio" name="box" id="A101" onclick="boxNum(this)"> A101</td>
+					<td><input type="radio" name="box" id="A102" onclick="boxNum(this)"> A102</td> 
+					<td><input type="radio" name="box" id="A103" onclick="boxNum(this)"> A103</td> 
+					<td><input type="radio" name="box" id="A104" onclick="boxNum(this)"> A104</td>
+					<td><input type="radio" name="box" id="A105" onclick="boxNum(this)"> A105</td> 
+				</tr> 
+			</table>
+			<table  class="boxNum" onclick="myFunction()"> 
+				<tr> 
+					<th>Section B</th>
+				</tr> 
+				<tr> 
+					<td><input type="radio" name="box" id="B100" onclick="boxNum(this)">B100</td> 
+					<td><input type="radio" name="box" id="B101" onclick="boxNum(this)">B101</td>
+					<td><input type="radio" name="box" id="B102" onclick="boxNum(this)">B102</td>
+					<td><input type="radio" name="box" id="B103" onclick="boxNum(this)">B103</td> 
+					<td><input type="radio" name="box" id="B104" onclick="boxNum(this)">B104</td>
+					<td><input type="radio" name="box" id="B105" onclick="boxNum(this)">B105</td> 
+				</tr> 
+			</table>
+			<table  class="boxNum" onclick="myFunction()"> 
+				<tr> 
+					<th>Section C</th>
+				</tr> 
+				<tr> 
+					<td><input type="radio" name="box" id="C100" onclick="boxNum(this)">C100</td> 
+					<td><input type="radio" name="box" id="C101" onclick="boxNum(this)">C101</td>
+					<td><input type="radio" name="box" id="C102" onclick="boxNum(this)">C102</td>  
+					<td><input type="radio" name="box" id="C103" onclick="boxNum(this)">C103</td> 
+					<td><input type="radio" name="box" id="C104" onclick="boxNum(this)">C104</td>
+					<td><input type="radio" name="box" id="C105" onclick="boxNum(this)">C105</td> 
+				</tr> 
+			</table>
+		</div>	
+		<script src="script.js"></script>
+	</body>
+</html>
