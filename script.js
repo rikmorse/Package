@@ -10,7 +10,16 @@
 
 
 function boxNum(el) {
-	alert("You selected " + (el.id) + (" is this correct?"));
+	//alert("You selected " + (el.id) + (" is this correct?"));
+	confirm("You selected " + (el.id) + (" is this correct?"));
+	if (confirm) {
+		document.getElementById("apNumber").value = el.id;
+	}	 else if {
+		document.getElementById("apNumber").value = "";
+	}	else  {
+		document.getElementById("apNumber").value = "";
+	}
+
 }
 
 function formVal() {
