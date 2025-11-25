@@ -5,62 +5,81 @@
 		<title>home</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" href="./images/iconGreenQ.png" type="image/QfavIcon"/>
 	</head>
 	<body>	
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="picture.html">Pictures</a></li>
-					<li><a href="map.html">Map</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="about.html">Resident Info</a></li>
-				</ul>
-			</nav>
-			<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="picture.html">Pictures</a></li>
+				<li><a href="map.html">Map</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html">Resident Info</a></li>
+			</ul>
+		</nav>
+		<p id="myText" class="zoomable-text">Click this text to zoom in or out.</p>
+		<header>
 			<h1>Package Notification</h1>
 		</header>
 		<div class="container">
 			<h3>Mail Box Numbers</h3>
-			<table class="boxNum" onclick="boxNum()"> 
-				<tr> 
-					<th class="sections">Section A</th>
-				</tr> 
-				<tr> 
-					<td><input type="radio" name="box" id="A100" onclick="boxNum(this)"> A100</td> 
-					<td><input type="radio" name="box" id="A101" onclick="boxNum(this)"> A101</td>
-					<td><input type="radio" name="box" id="A102" onclick="boxNum(this)"> A102</td> 
-					<td><input type="radio" name="box" id="A103" onclick="boxNum(this)"> A103</td> 
-					<td><input type="radio" name="box" id="A104" onclick="boxNum(this)"> A104</td>
-					<td><input type="radio" name="box" id="A105" onclick="boxNum(this)"> A105</td> 
-				</tr> 
-			</table>
-			<table  class="boxNum" onclick="myFunction()"> 
-				<tr> 
-					<th class="sections">Section B</th>
-				</tr> 
-				<tr> 
-					<td><input type="radio" name="box" id="B100" onclick="boxNum(this)">B100</td> 
-					<td><input type="radio" name="box" id="B101" onclick="boxNum(this)">B101</td>
-					<td><input type="radio" name="box" id="B102" onclick="boxNum(this)">B102</td>
-					<td><input type="radio" name="box" id="B103" onclick="boxNum(this)">B103</td> 
-					<td><input type="radio" name="box" id="B104" onclick="boxNum(this)">B104</td>
-					<td><input type="radio" name="box" id="B105" onclick="boxNum(this)">B105</td> 
-				</tr> 
-			</table>
-			<table  class="boxNum" onclick="myFunction()"> 
-				<tr> 
-					<th class="sections">Section C</th>
-				</tr> 
-				<tr> 
-					<td><input type="radio" name="box" id="C100" onclick="boxNum(this)">C100</td> 
-					<td><input type="radio" name="box" id="C101" onclick="boxNum(this)">C101</td>
-					<td><input type="radio" name="box" id="C102" onclick="boxNum(this)">C102</td>  
-					<td><input type="radio" name="box" id="C103" onclick="boxNum(this)">C103</td> 
-					<td><input type="radio" name="box" id="C104" onclick="boxNum(this)">C104</td>
-					<td><input type="radio" name="box" id="C105" onclick="boxNum(this)">C105</td> 
-				</tr> 
-			</table>
-		</div>	
+			
+			<div class="container">		
+				<table class="boxNum"> 
+					<caption class="sections">Section A</caption>
+						<tbody>
+							<tr>
+								<td><input onclick="userSelection()" type="radio" name="boxA" class="box" id="A1" value="A100"> A100</td> 
+								<td><input onclick="userSelection()" type="radio" name="boxA" class="box" id="A1" value="A101"> A101</td>
+								<td><input onclick="userSelection()" type="radio" name="boxA" class="box" id="A1" value="A102"> A102</td> 
+								<td><input onclick="userSelection()" type="radio" name="boxA" class="box" id="A1" value="A103"> A103</td> 
+								<td><input onclick="userSelection()" type="radio" name="boxA" class="box" id="A1" value="A104"> A104</td>
+								<td><input onclick="userSelection()" type="radio" name="boxA" class="box" id="A1" value="A105"> A105</td> 
+							</tr>
+						</tbody> 
+				</table>
+			</div>
+			<div class="container">
+				<table  class="boxNum"> 
+					<caption>Section B</caption>
+						<tbody> 
+							<tr> 
+								<td><input onclick="userSelection()" type="radio" name="boxA" class="box" id="A1" value="B100"> B100</td> 
+								<td><input onclick="userSelection()" type="radio" name="boxA" class="box" id="A1" value="B101"> B101</td> 
+								<td><input onclick="userSelection()" type="radio" name="boxA" class="box" id="A1" value="B102"> B102</td> 
+								<td><input onclick="userSelection()" type="radio" name="boxA" class="box" id="A1" value="B103"> B103</td> 
+								<td><input onclick="userSelection()" type="radio" name="boxA" class="box" id="A1" value="B104"> B104</td> 
+								<td><input onclick="userSelection()" type="radio" name="boxA" class="box" id="A1" value="B105"> B105</td>  
+							</tr> 
+						</tbody>
+				</table>
+			</div>
+			<div class="container">			
+				<table class="boxNum">
+					<caption>Section C</caption>
+						<tbody>
+							<tr>
+								<td><input onclick="userSelection()" type="radio" name="boxA" class="box" id="A1" value="C100"> C100</td> 
+								<td><input onclick="userSelection()" type="radio" name="boxA" class="box" id="A1" value="C101"> C101</td> 
+								<td><input onclick="userSelection()" type="radio" name="boxA" class="box" id="A1" value="C102"> C102</td> 
+								<td><input onclick="userSelection()" type="radio" name="boxA" class="box" id="A1" value="C103"> C103</td> 
+								<td><input onclick="userSelection()" type="radio" name="boxA" class="box" id="A1" value="C104"> C104</td> 
+								<td><input onclick="userSelection()" type="radio" name="boxA" class="box" id="A1" value="C105"> C105</td> 
+							</tr>
+						</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="container">
+			<button onclick="openCustomPopup()">Open Custom Popup</button>
+			<div id="overlay"></div>
+			<div id="popupDialog" >
+				<h2>Welcome!</h2>
+				<p>This is a custom popup message.</p>
+				<button onclick="closeCustomPopup()">Close</button>
+			</div>
+		</div>
+
 		<script src="script.js" charset="utf-8" ></script>
 	</body>
 </html>

@@ -1,55 +1,38 @@
-/*
- * Package Notification Website
- * Designed & Developed by Morse
- *
- *Filename: script.js
-*/
 
+  document.getElementById('myText').onclick = function() {
+    this.classList.toggle('zoomed');
+  };
 
-// global variable
+function userSelection() {
+const selectedRadio = document.querySelector('#A1[name="boxA"]:checked');
+const boxNum = selectedRadio.value;
+let userConfirm = confirm("Is " + boxNum + " the correct box?")
 
-
-function boxNum(el) {
-	//alert("You selected " + (el.id) + (" is this correct?"));
-	confirm("You selected " + (el.id) + (" is this correct?"));
-	if (confirm) {
-		document.getElementById("apNumber").value = el.id;
-	}	 else if {
-		document.getElementById("apNumber").value = "";
-	}	else  {
-		document.getElementById("apNumber").value = "";
-	}
-
+if (userConfirm) {
+  alert("Your door for " + boxNum + " will open shortly!");
+  
+  // Perform the action if the user confirmed
+} else {
+  alert("Please select correct box number.");
+  // Handle cancellation
+}
 }
 
-function formVal() {
-	var firstName = document.getElementById("first").value;
-	var lastName = document.getElementById("last").value;
-	var cellNum = document.getElementById("cell").value;
-	var email = document.getElementById("email").value;
-	var emailReg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-	var apartmentNumber = document.getElementById("apNumber").value;
-
-	if (firstName === '' || lastName === '') {
-		alert("Please fill all fields...!!!");
-		return false;
-	} else if(!(email).match(emailReg)){
-		alert("Invalid Email...!!!");
-		return false;
-	} else {
-		return true;
-	}
+function openCustomPopup() {
+  document.getElementById("overlay").style.display = "block";
+  document.getElementById("popupDialog").style.display = "block";
 }
 
-function phoneNumber(){
-	var cellNum = document.getElementById("cell").value;
-  	var phoneNum = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-  		if(cellNum.value.match(phoneNum)) {
-  			alert("This is correct");
-      		return true;
-        } 
-        else {
-        	alert("Please use correct format!");
-        return false;
-        }
-	}
+function closeCustomPopup() {
+  document.getElementById("overlay").style.display = "none";
+  document.getElementById("popupDialog").style.display = "none";
+}
+
+// Optional: Close popup when clicking outside (on the overlay)
+window.onclick = function(event) {
+  const overlay = document.getElementById('overlay');
+  if (event.target == overlay) {
+    closeCustomPopup();
+  }
+}
+
