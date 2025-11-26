@@ -20,9 +20,10 @@ body {
 h3, h1 {
 	text-align: center;
 	border: 2px solid black;
-	background-color: lightgrey;
-	padding: 1em;
+	background-color: lightgreen;
+	padding: 1%;
 	width: 50%;
+	height: 25px;
 	margin-left: 25%;
 }
 /* Navigation Bar */
@@ -32,7 +33,7 @@ ul {
     margin: 2.5% 0 0 2.5%;
     padding: 0;
     overflow: hidden;
-    background-color: lightgrey;
+    background-color: lightblue;
     border: 2px solid black;
     position: -webkit-sticky; /* Safari */ 
 	position: sticky;
@@ -104,12 +105,13 @@ td {
 	border: 2px solid black;
 }	
 
-.sections {
-	color: black;
+/* .sections {
+	color: yellow;
+	text-emphasis: bold;
 	background-color: lightgrey;
 	border: 2px solid black;
 	padding: 1% .5% .5% 1%;
-}		
+}		 */
 caption {
 	color: black;
 	background-color: lightgrey;
